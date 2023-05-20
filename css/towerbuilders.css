@@ -113,19 +113,28 @@ p.vignette {
   font-style: italic;
 }
 
-.term, .cortex {
+/* Terms are capitalized, but will be forther modified depending upon to setting term or cortex term. */
+.term {
   text-transform: capitalize;
 }
 
-.trait {
-  text-transform: capitalize;
+.cortex {
+  font-weight: 600;
 }
 
 .setting {
   color: var(--secondarycolor);
 }
 
-.power {
+/* I don't want verbs capitalized, but may choose styling later. */
+.act {
+}
+
+
+/* These are all "proper names" so capitalize and italicize.*/
+/* power and sfx classes are techically also traits, but they may be styled differently later.*/
+.power, .sfx, .trait {
+  text-transform: capitalize;
   font-style: italic;
 }
 
